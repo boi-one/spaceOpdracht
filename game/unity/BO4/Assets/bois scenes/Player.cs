@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
         {
             transform.position -= new Vector3(speed, 0) * Time.deltaTime;   
         }
-        if (Input.GetKey(KeyCode.S) && transform.position.y > -4.02)
+        if (Input.GetKey(KeyCode.S) && transform.position.y > -4.3)
         {
             transform.position -= new Vector3(0, speed) * Time.deltaTime;
             transform.localScale += (new Vector3(speed / 1.4f, speed) * Time.deltaTime) /3;

@@ -14,6 +14,6 @@ public class kijknaar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.rotation = transform.LookAt(new Vector3());
+       // transform.rotation = transform.LookAt(new Vector3());
     }
 }
