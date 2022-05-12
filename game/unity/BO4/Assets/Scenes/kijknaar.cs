@@ -26,7 +26,8 @@ public class kijknaar : MonoBehaviour
 
         print(ab);
         print(bc);
-        if (a <= 1.000f && a >= 0)
+        print("hoi "+ Mathf.Tan(a));
+        if (Mathf.Tan(a) <=60 && Mathf.Tan(a) >= 0)
         {
 
 
@@ -34,7 +35,7 @@ public class kijknaar : MonoBehaviour
             
             
         }
-        if (a >= -1.000f && a <= 0)
+        if (Mathf.Tan(a) >= 120 && Mathf.Tan(a) <= 60)
         {
 
 
@@ -42,7 +43,7 @@ public class kijknaar : MonoBehaviour
 
 
         }
-        if (a <= 750 && a >= 1500)
+        if (Mathf.Tan(a) >= 180 && Mathf.Tan(a) <= 120)
         {
             gameObject.transform.eulerAngles = new Vector3(0, 0, 0);
         }
