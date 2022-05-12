@@ -56,14 +56,14 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scenes\animatatie.cs" />
+    <Compile Include="Assets\Scenes\scripts\zwartwoorden.cs" />
+    <Compile Include="Assets\Scenes\scripts\animatatie.cs" />
     <Compile Include="Assets\bois scenes\Items.cs" />
-    <Compile Include="Assets\Scenes\light.cs" />
-    <Compile Include="Assets\Scenes\volgMUis.cs" />
-    <Compile Include="Assets\Scenes\kijknaar.cs" />
+    <Compile Include="Assets\Scenes\scripts\light.cs" />
+    <Compile Include="Assets\Scenes\scripts\volgMUis.cs" />
+    <Compile Include="Assets\Scenes\scripts\kijknaar.cs" />
+    <Compile Include="Assets\Scenes\scripts\deSanityBar.cs" />
     <Compile Include="Assets\bois scenes\Player.cs" />
-    <Compile Include="Assets\Scenes\deSanityBar.cs" />
-    <Compile Include="Assets\Scenes\zwartwoorden.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
