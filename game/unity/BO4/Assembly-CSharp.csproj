@@ -57,10 +57,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scenes\animatatie.cs" />
+    <Compile Include="Assets\bois scenes\Items.cs" />
+    <Compile Include="Assets\Scenes\light.cs" />
     <Compile Include="Assets\Scenes\volgMUis.cs" />
     <Compile Include="Assets\Scenes\kijknaar.cs" />
     <Compile Include="Assets\bois scenes\Player.cs" />
-    <Compile Include="Assets\Scenes\light.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
