@@ -7,7 +7,7 @@ public class kijknaar : MonoBehaviour
     public GameObject bekijkt;
     public Vector3 rotatie;
     [SerializeField] private Vector3 _rotation;
-    
+    public GameObject kijkobject = null;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,18 +17,19 @@ public class kijknaar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         float x = bekijkt.transform.position.x - transform.position.x;
         float y = bekijkt.transform.position.y - transform.position.y;
-        float ab = transform.position.x - x;
-        float bc = transform.position.y - y;
+        float ab = kijkobject.transform.position.x - x;
+        float bc = kijkobject.transform.position.y - y;
         float a = bc / ab;
        
         print("hoi" + a);
         
         print(ab);
         print(bc);
-        print("hoi "+ Mathf.Tan(a));
-        if (Mathf.Tan(a) <=60 && Mathf.Tan(a) >= 0)
+        print("hoi 1 4"+ Mathf.Tan(a));
+        if (a <= 0.577f && a >= -0.577f)
         {
 
             
@@ -36,7 +37,7 @@ public class kijknaar : MonoBehaviour
             
             
         }
-        if (Mathf.Tan(a) >= 120 && Mathf.Tan(a) <= 60)
+        if (a >= -57.28996 && Mathf.Tan(a) <= -0.577)
         {
             
 
@@ -44,12 +45,19 @@ public class kijknaar : MonoBehaviour
 
 
         }
-        if (Mathf.Tan(a) >= 180 && Mathf.Tan(a) <= 120)
+        if (a <= -57.28996 && Mathf.Tan(a) >= -0.577)
         {
             gameObject.transform.eulerAngles = new Vector3(0, 0, 0);
         }
 
         //transform.LookAt(bekijkt.transform);
+        */
 
+        
+        kijkobject.transform.LookAt(bekijkt.transform);
+        if (kijkobject.transform.localEulerAngles.x <= 30 && kijkobject.transform.localEulerAngles.x >= -30)
+        {
+            transform.eulerAngles = new Vector3(0, 0, 0);
+        }
     }
 }
