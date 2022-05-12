@@ -5,6 +5,8 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float speed;
+    public float Scale1 = 1.4f;
+    public float Scale2 = 1f;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +19,7 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.W) && transform.position.y < -1.5)
         {
             transform.position += new Vector3(0, speed) * Time.deltaTime;
-            transform.localScale -= (new Vector3(speed / 1.4f, speed) * Time.deltaTime) /3;
+            transform.localScale -= (new Vector3(speed / Scale1, speed / Scale2) * Time.deltaTime) /3;
         }
         if (Input.GetKey(KeyCode.A) && transform.position.x > -8.36)
         {
