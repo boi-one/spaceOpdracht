@@ -62,6 +62,8 @@
     <Compile Include="Assets\Scenes\volgMUis.cs" />
     <Compile Include="Assets\Scenes\kijknaar.cs" />
     <Compile Include="Assets\bois scenes\Player.cs" />
+    <Compile Include="Assets\Scenes\deSanityBar.cs" />
+    <Compile Include="Assets\Scenes\zwartwoorden.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

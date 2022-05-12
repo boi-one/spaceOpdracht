@@ -7,6 +7,7 @@ public class kijknaar : MonoBehaviour
     public GameObject bekijkt;
     public Vector3 rotatie;
     [SerializeField] private Vector3 _rotation;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -23,21 +24,21 @@ public class kijknaar : MonoBehaviour
         float a = bc / ab;
        
         print("hoi" + a);
-
+        
         print(ab);
         print(bc);
         print("hoi "+ Mathf.Tan(a));
         if (Mathf.Tan(a) <=60 && Mathf.Tan(a) >= 0)
         {
 
-
+            
             gameObject.transform.eulerAngles = new Vector3(0,0,-90); 
             
             
         }
         if (Mathf.Tan(a) >= 120 && Mathf.Tan(a) <= 60)
         {
-
+            
 
             gameObject.transform.eulerAngles = new Vector3(0, 0, 90);
 
